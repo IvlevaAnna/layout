@@ -1,0 +1,86 @@
+@import "vars"
+
+.product_slider
+  position: relative
+  background: #F7F7F7
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 11px
+  margin-bottom: 665px
+  &_button:hover path:last-of-type
+    fill: #F16D7F
+
+.mb
+  margin-bottom: 128px
+
+.info
+  position: absolute
+  top: 915px
+  &_container
+    padding: 65px 250px
+    background: $var2
+    border: 1px solid #EAEAEA
+    display: flex
+    flex-direction: column
+    align-items: center
+  &_heading_mini
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #F16D7F
+
+  &_border
+    width: 63px
+    height: 3px
+    background: #EF5B70
+    margin: 12px 0
+
+  &_heading
+    font-weight: 300
+    font-size: 18px
+    line-height: 22px
+    color: #4D4D4D
+    padding-bottom: 48px
+
+  &_text
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    color: #5E5E5E
+    width: 574px
+
+
+  &_price
+    text-align: center
+    font-size: 24px
+    line-height: 29px
+    width: 642px
+    padding: 32px 0 65px 0
+    border-bottom: 1px solid #EAEAEA
+    margin-bottom: 65px
+
+  &_info
+    padding-bottom: 48px
+
+  &_button
+    display: flex
+    fill: $colorSite
+    align-items: center
+    justify-content: center
+    gap: 22px
+    padding: 14px 56px 9px 23px
+    border: 1px solid $colorSite
+    font-size: 14px
+    line-height: 17px
+    color: $colorSite
+    margin-top: 48px
+    path
+      fill: $colorSite
+
+  &_button:hover
+    color: $var2
+    background: $colorSite
+    path
+      fill: $var2
