@@ -1,0 +1,119 @@
+@media (max-width: 767px)
+  $gapGrid: 32px
+  $widthSite: 375px
+  .center
+    padding-left: 16px
+    padding-right: 16px
+
+  .header
+    &_link
+      display: none
+
+  .menu
+    top: 0
+    width: 100%
+    &__box
+      margin-bottom: 16px
+      display: flex
+      gap: 32px
+      & path
+        fill: black
+
+    &__heading
+      display: none
+
+  #switcher:checked ~ .menu
+    right: 0
+    top: calc(-100% - 75px)
+
+  .slider
+    padding-left: 16px
+    padding-right: 16px
+    min-height: 363px
+    &_left
+      display: none
+
+    &_right
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+
+    &_content
+      margin-top: 0
+
+    &_heading
+      font-size: 38px
+      line-height: 46px
+      &-mini
+        font-size: 20px
+        line-height: 24px
+
+
+  .sale
+    &_content
+      flex-direction: column
+      gap: $gapGrid
+      margin-bottom: 32px
+      margin-top: 64px
+
+    &_item
+      width: 343px
+      &_big img
+        height: 111px
+        object-fit: cover
+
+  .head
+    justify-content: center
+    gap: 32px
+    flex-direction: column
+    align-items: center
+
+  .items
+    margin-top: 64px
+    &_wrapper
+      justify-content: center
+      margin-top: 64px
+      margin-bottom: 41px
+      gap: 16px
+
+    &_button
+      margin: 0 auto 96px auto
+
+  .offers
+    flex-direction: column
+    align-items: center
+    gap: 46px
+    padding-top: 48px
+    padding-bottom: 81px
+
+  .offer
+    max-width: 347px
+
+  .subscribe
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding-top: 54px
+    padding-bottom: 110px
+    gap: 78px
+    &_left
+      padding: 0
+      font-size: 18px
+      line-height: 22px
+
+    &_right
+      padding: 0
+
+  .footer
+    flex-direction: column-reverse
+    align-items: center
+    justify-content: center
+    padding-top: 43px
+    padding-bottom: 9px
+    gap: 40px
+    &_left
+      padding: 0
+
+    &_right
+      padding: 0

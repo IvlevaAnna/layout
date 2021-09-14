@@ -17,6 +17,10 @@ a
   padding-left: calc(50% - 570px)
   padding-right: calc(50% - 570px)
 
+.box
+  position: relative
+  overflow: hidden
+
 .header
   background: $colorDark
   height: 75px
@@ -31,49 +35,66 @@ a
   &_right
     @extend .header_left
     gap: 33px
-    position: relative
 
 
-details > summary::marker
-  display: none
-  content: ""
-
-.menu_content
-  display: flex
-  flex-direction: column
-  gap: 24px
-  background: $var2
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
-  padding: 16px 17px 157px 34px
+.menu
   position: absolute
-  top: 54px
-  left: 167px
-  z-index: 1
+  top: 75px
+  right: 0
+  background: #FFFFFF
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+  padding: 32px
+  width: 232px
+  box-sizing: border-box
+  transition: all .5s
+  z-index: 100
+  &__ul
+    list-style-type: none
 
-.menu_bottom
-  display: flex
-  flex-direction: column
-  gap: 20px
+  &__heading
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    margin-bottom: 4px
 
-.menu_heading
-  font-size: 14px
-  line-height: 17px
-  color: $colorSite
-
-.main_menu_heading
-  font-weight: bold
-  color: $var4
-
-.menu_item
-  display: block
-  width: 160px
-  margin: 12px 0 0 22px
-  font-size: 14px
-  line-height: 17px
-  color: $var5
-  &:hover
+  &__link-heading
+    font-size: 14px
+    line-height: 17px
     color: $colorSite
+    text-transform: uppercase
 
+  &__li
+    margin-top: 20px
+
+  &__content-links
+    display: flex
+    flex-direction: column
+    margin-left: 22px
+    gap: 11px
+    margin-top: 12px
+
+  &__link
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+    &:hover
+      color: $colorSite
+
+  &__close
+    position: absolute
+    top: 16px
+    right: 16px
+    font-size: 20px
+
+  &__box
+    display: none
+
+#switcher
+  position: absolute
+  visibility: hidden
+  left: -9999999px
+  &:checked ~ .menu
+    right: -232px
 
 .slider
   background: $var6
@@ -105,7 +126,10 @@ details > summary::marker
     margin-bottom: 30px
 
   &_item
+    width: ($widthSite - 2 * $gapGrid) / 3
     position: relative
+    &_big
+      width: $widthSite
 
   &_text
     position: absolute
@@ -366,3 +390,5 @@ details > summary::marker
 @import "product"
 @import "cart"
 @import "registration"
+@import "m1023"
+@import "m767"
