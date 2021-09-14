@@ -1,0 +1,78 @@
+@import "vars"
+
+.registration
+  display: flex
+  gap: 128px
+  margin-top: 64px
+  margin-bottom: 96px
+  &_left
+    display: flex
+    flex-direction: column
+    width: 360px
+    &_heading
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      color: #222222
+      margin-bottom: 21px
+
+    &_input
+      display: flex
+      padding: 14px 0 14px 16px
+      box-sizing: border-box
+      width: 360px
+      color: rgba(177, 177, 177, 1)
+      border: 1px solid #A4A4A4
+      margin-bottom: 21px
+      &_last
+        margin-bottom: 16px
+
+    &_radio
+      display: flex
+      margin: 32px 0
+      gap: 20px
+
+    &_radio label
+      font-weight: 300
+      font-size: 11px
+      line-height: 13px
+      color: #000000
+
+    &_text
+      font-weight: 300
+      font-size: 13px
+      line-height: 16px
+      color: #B1B1B1
+      margin-bottom: 39px
+
+    &_button
+      display: flex
+      gap: 20px
+      align-items: baseline
+      background: #F16D7F
+      border: 1px solid #F16D7F
+      padding: 16px 25px 16px 29px
+      font-size: 14px
+      line-height: 17px
+      color: #FFFFFF
+
+  &_right
+    font-weight: 300
+    font-size: 24px
+    line-height: 29px
+    color: #000000
+    &_heading
+      text-transform: capitalize
+
+    &_text
+      padding: 22px 0
+
+    &_list
+      display: flex
+      flex-direction: column
+      gap: 16px
+      &_item
+        list-style-type: none
+
+      &_item svg
+        padding-right: 23px

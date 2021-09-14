@@ -5,6 +5,9 @@
 
 body {
   font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -278,6 +281,7 @@ details > summary::marker {
   background-size: cover;
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
 }
 .subscribe_left {
   padding-top: 86px;
@@ -738,8 +742,96 @@ details > summary::marker {
   color: #F16D7F;
 }
 
+.input_box {
+  margin-left: 24px;
+  width: 44px;
+}
+
 .colored {
   color: #F16D7F;
+}
+
+.registration {
+  display: flex;
+  gap: 128px;
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+.registration_left {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+.registration_left_heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 21px;
+}
+.registration_left_input {
+  display: flex;
+  padding: 14px 0 14px 16px;
+  box-sizing: border-box;
+  width: 360px;
+  color: #b1b1b1;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 21px;
+}
+.registration_left_input_last {
+  margin-bottom: 16px;
+}
+.registration_left_radio {
+  display: flex;
+  margin: 32px 0;
+  gap: 20px;
+}
+.registration_left_radio label {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+.registration_left_text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-bottom: 39px;
+}
+.registration_left_button {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  background: #F16D7F;
+  border: 1px solid #F16D7F;
+  padding: 16px 25px 16px 29px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.registration_right {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration_right_heading {
+  text-transform: capitalize;
+}
+.registration_right_text {
+  padding: 22px 0;
+}
+.registration_right_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration_right_list_item {
+  list-style-type: none;
+}
+.registration_right_list_item svg {
+  padding-right: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */
