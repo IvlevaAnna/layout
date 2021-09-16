@@ -117,3 +117,38 @@
 
     &_right
       padding: 0
+
+  .top
+    display: flex
+    flex-direction: column
+    gap: 32px
+    justify-content: center
+
+  .filters
+    padding-top: 24px
+    display: flex
+    justify-content: space-between
+    gap: 0
+    &_item_main
+      display: none
+
+    &_svg_big
+      display: flex
+
+    &_svg
+      display: none
+
+    &_item
+      &:not(:last-of-type)
+        gap: 9px
+
+      &:last-of-type
+        gap: 24px
+
+      &_details
+        font-size: 12px
+        line-height: 14px
+
+
+  .items_mt
+    margin-top: 0
