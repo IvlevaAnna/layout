@@ -1,0 +1,80 @@
+@media (max-width: 1023px)
+  $widthSite: 736px
+  $gapGrid: 20px
+  .center
+    padding-left: calc(50% - 368px)
+    padding-right: calc(50% - 368px)
+
+  .header
+    &_left
+      padding-left: 32px
+
+    &_right
+      padding-right: 32px
+
+  .slider
+    &_right
+      padding-left: 39px
+
+    &_heading
+      font-size: 44px
+      line-height: 53px
+      &-mini
+        font-size: 24px
+        line-height: 29px
+
+  .sale
+    padding-top: 0
+    &_content
+      gap: $gapGrid
+      margin-bottom: $gapGrid
+      margin-top: $gapGrid
+
+    &_item
+      width: ($widthSite - 2 * $gapGrid) / 3
+      position: relative
+      &_big
+        width: $widthSite
+
+    &_item img
+      max-width: 100%
+
+  .items
+    margin-top: 154px
+    &_wrapper
+      margin-top: 73px
+      margin-bottom: 32px
+      gap: 16px
+
+    &_button
+      margin: 0 auto 65px auto
+
+  .offers
+    flex-direction: column
+    align-items: center
+    gap: 48px
+    padding-top: 48px
+    padding-bottom: 64px
+
+  .offer
+    max-width: 360px
+
+  .subscribe
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding-top: 54px
+    padding-bottom: 140px
+    gap: 78px
+    &_left
+      padding: 0
+
+    &_right
+      padding: 0
+
+  .footer
+    &_left
+      padding-left: 32px
+
+    &_right
+      padding-right: 32px
